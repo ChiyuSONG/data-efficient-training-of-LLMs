@@ -14,16 +14,16 @@
 - 开源权重：经过指令微调后的通用型对话模型，权重可在[这里](https://huggingface.co/ChiyuSONG/data-efficient-training-of-LLMs-v1/tree/main)获取。
 - 效果示例：
 <p align="center" width="100%">
-      <img src="img/demo1.jpg" alt="demo1" style="width: 90%; min-width: 200px; display: block; margin: auto;">
+      <img src="img/demo1.jpg" alt="demo1" style="width: 96%; min-width: 200px; display: block; margin: auto;">
 </p>
 <p align="center" width="100%">
-      <img src="img/demo2.jpg" alt="demo2" style="width: 90%; min-width: 200px; display: block; margin: auto;">
+      <img src="img/demo2.jpg" alt="demo2" style="width: 96%; min-width: 200px; display: block; margin: auto;">
 </p>
 <p align="center" width="100%">
-      <img src="img/demo3.jpg" alt="demo3" style="width: 90%; min-width: 200px; display: block; margin: auto;">
+      <img src="img/demo3.jpg" alt="demo3" style="width: 96%; min-width: 200px; display: block; margin: auto;">
 </p>
 <p align="center" width="100%">
-      <img src="img/demo4.jpg" alt="demo4" style="width: 90%; min-width: 200px; display: block; margin: auto;">
+      <img src="img/demo4.jpg" alt="demo4" style="width: 96%; min-width: 200px; display: block; margin: auto;">
 </p>
 
 ### 环境
@@ -58,7 +58,7 @@ python chat_gradio.py -model_name_or_path **local_path_to_chat_model**
 ```
 模型即可对话中回复相关问题：
 <p align="center" width="100%">
-      <img src="img/demo_id.jpg" alt="demo_id" style="width: 90%; min-width: 200px; display: block; margin: auto;">
+      <img src="img/demo_id.jpg" alt="demo_id" style="width: 96%; min-width: 200px; display: block; margin: auto;">
 </p>
 
 <br> 
@@ -74,9 +74,10 @@ print(responses[0]) # 咨询师:你好，我是你的心理咨询师，先我想
 ```
 
 ## 免责声明
-本项目旨在学术研究，我们并未基于此项目开发任何应用。商业用途必须遵守MIT license和项目生态中包含的所有使用协议，如[Baichuan 2 模型社区许可协议](https://github.com/baichuan-inc/Baichuan2#%E5%A3%B0%E6%98%8E%E5%8D%8F%E8%AE%BA%E5%BC%95%E7%94%A8)。所有使用者必须严格遵守当地法律法规。对于使用我们的开源模型可能引发的任何问题，包括但不限于数据安全、公众舆论风险，或模型的误用、滥用、传播或不当利用所引发的任何风险和问题，我们不承担任何责任。
+本项目旨在学术研究，我们并未基于此项目开发任何应用。商业用途必须遵守[MIT LICENSE](https://github.com/ChiyuSONG/data-efficient-training-of-LLMs/blob/main/LICENSE)和项目生态中包含的所有使用协议，如[Baichuan 2 模型社区许可协议](https://github.com/baichuan-inc/Baichuan2#%E5%A3%B0%E6%98%8E%E5%8D%8F%E8%AE%BA%E5%BC%95%E7%94%A8)。所有使用者必须严格遵守当地法律法规。对于使用我们的开源模型可能引发的任何问题，包括但不限于数据安全、公众舆论风险，或模型的误用、滥用、传播或不当利用所引发的任何风险和问题，我们不承担任何责任。
 
 ## 引用
+```
 @ARTICLE{2023arXiv231019651S,
        author = {{Song}, Chiyu and {Zhou}, Zhanchao and {Yan}, Jianhao and {Fei}, Yuejiao and {Lan}, Zhenzhong and {Zhang}, Yue},
         title = "{Dynamics of Instruction Tuning: Each Ability of Large Language Models Has Its Own Growth Pace}",
@@ -92,3 +93,4 @@ archivePrefix = {arXiv},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv231019651S},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+```
