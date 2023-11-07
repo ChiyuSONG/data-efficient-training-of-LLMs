@@ -9,10 +9,10 @@
 这一阶段，我们关注指令微调的过程。[Dynamics of Instruction Tuning](https://arxiv.org/abs/2310.19651)一文揭示了大型语言模型的各种能力在指令微调过程中会受到多种因素的影响，从而产生不同的发展速率。我们利用文中开源的包含了创意写作、代码生成、逻辑推理等十项能力类别的人工清洗指令集，来验证基于百川2底座模型训练后的效果。
 
 ### 总览
-- 基础模型：[Baichuan2-13B-Base](https://github.com/baichuan-inc/Baichuan2)，由百川智能采用2.6万亿Tokens的高质量语料训练。
-- 训练数据：共计8万余条，其中4万余条来自上文提到的[开源数据集](https://huggingface.co/datasets/ChiyuSONG/dynamics-of-instruction-tuning)，数据被划分成十种不同的能力类别。另外4万余条通用型指令集尚处于研究阶段，这些数据由人工清洗自[GPT4生成数据](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM#data-release)。
-- 对话模型：经过指令微调后的通用型对话模型，权重可在[这里](https://huggingface.co/ChiyuSONG/data-efficient-training-of-LLMs-v1/tree/main)获取。
-- 效果示例：
+- **基础模型**：[Baichuan2-13B-Base](https://github.com/baichuan-inc/Baichuan2)，由百川智能采用2.6万亿Tokens的高质量语料训练。
+- **训练数据**：共计8万余条，其中4万余条来自上文提到的[开源数据集](https://huggingface.co/datasets/ChiyuSONG/dynamics-of-instruction-tuning)，数据被划分成十种不同的能力类别。另外4万余条通用型指令集尚处于研究阶段，这些数据由人工清洗自[GPT4生成数据](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM#data-release)。
+- **对话模型**：经过指令微调后的通用型对话模型，权重可在[这里](https://huggingface.co/ChiyuSONG/data-efficient-training-of-LLMs-v1/tree/main)获取。
+- **效果示例**：
 <p align="center" width="100%">
       <img src="img/demo1.jpg" alt="demo1" style="width: 96%; min-width: 200px; display: block; margin: auto;">
 </p>
