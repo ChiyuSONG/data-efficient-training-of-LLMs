@@ -38,7 +38,7 @@ bash run_train.sh --train_dir **path_to_train_files** --valid_dir **path_to_vali
 # 示例
 bash run_train.sh --train_dir "data/curated/full" --valid_dir "data/curated/valid" --model_name_or_path "models/Baichuan2-13B-Base" --batch_size 8 --gradient_accumulation 1
 ```
-训练日志和模型检查点会保存在"\runs"。
+训练日志和模型检查点会保存在"/runs"。
 
 ### 推理部署
 基于gradio部署对话系统。
