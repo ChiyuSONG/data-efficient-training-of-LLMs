@@ -45,7 +45,7 @@ bash run_train.sh --train_dir "data/curated/full" --valid_dir "data/curated/vali
 ```bash
 python chat_gradio.py # 会从hf下载模型
 #or
-python chat_gradio.py -model_name_or_path **local_path_to_chat_model**
+python chat_gradio.py --model_name_or_path **local_path_to_chat_model**
 ```
 运行后会建立本地URL和临时的公开URL，可根据提示进入URL进行对话。
 
