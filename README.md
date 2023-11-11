@@ -1,6 +1,6 @@
 # Data-Efficient Training of Large Language Models
 
-本项目旨在探索大型语言模型的数据高效训练方法，研究如何有效地构建和使用数据集，以便让模型更好地学习语言表达和通用能力。我们将利用前沿的NLP科研成果持续提升模型性能，模型权重将完全开源，并提供简洁明了的训练方法和推理部署方式。
+本项目旨在探索大型语言模型的数据高效训练方法，研究如何有效地构建和使用数据集，以便让模型更好地学习语言表达和通用能力。我们将利用前沿的NLP科研成果持续提升模型性能，模型权重完全开源，并提供简洁明了的[训练方法](https://github.com/ChiyuSONG/data-efficient-training-of-LLMs#%E8%AE%AD%E7%BB%83)，[推理部署方式](https://github.com/ChiyuSONG/data-efficient-training-of-LLMs#%E6%8E%A8%E7%90%86%E9%83%A8%E7%BD%B2)和[效果示例](https://github.com/ChiyuSONG/data-efficient-training-of-LLMs#%E6%80%BB%E8%A7%88)。
 
 ## 更新
 - 05/11/2023——在Version 1中，我们使用了开源的人工清洗的中文指令数据集和Baichuan2-13B-Base训练[通用对话模型](https://huggingface.co/ChiyuSONG/data-efficient-training-of-LLMs-v1/tree/main)。
