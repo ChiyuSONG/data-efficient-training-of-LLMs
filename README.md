@@ -10,7 +10,7 @@
 
 ### 总览
 - **基础模型**：[Baichuan2-13B-Base](https://github.com/baichuan-inc/Baichuan2)，由百川智能采用2.6万亿Tokens的高质量语料训练。
-- **训练数据**：共计8万余条，其中4万余条来自上文提到的[开源数据集](https://huggingface.co/datasets/ChiyuSONG/dynamics-of-instruction-tuning)，数据被划分成十种不同的能力类别。另外4万余条通用型指令集尚处于研究阶段，这些数据由人工清洗自[GPT4生成数据](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM#data-release)。
+- **训练数据**：共计8万余条中文指令数据，其中4万余条来自上文提到的[开源数据集](https://huggingface.co/datasets/ChiyuSONG/dynamics-of-instruction-tuning)，数据被划分成十种不同的能力类别。另外4万余条通用型指令集尚处于研究阶段，这些数据我们由人工清洗自[GPT4生成数据](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM#data-release)。
 - **对话模型**：获取经过[指令微调后的通用型对话模型](https://huggingface.co/ChiyuSONG/data-efficient-training-of-LLMs-v1/tree/main)的权重。
 - **效果示例**：
 <p align="center" width="100%">
