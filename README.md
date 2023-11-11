@@ -3,10 +3,10 @@
 本项目旨在探索大型语言模型的数据高效训练方法，研究如何有效地构建和使用数据集，以便让模型更好地学习语言表达和通用能力。我们将利用前沿的NLP科研成果持续提升模型性能，模型权重将完全开源，并提供简洁明了的训练方法和推理部署方式。
 
 ## 更新
-- 05/11/2023——在Version 1中，我们使用了开源的[人工清洗的中文指令数据集](https://arxiv.org/abs/2310.19651)和[Baichuan2-13B-Base](https://arxiv.org/abs/2309.10305)训练[通用对话模型](https://huggingface.co/ChiyuSONG/data-efficient-training-of-LLMs-v1/tree/main)。
+- 05/11/2023——在Version 1中，我们使用了开源的人工清洗的中文指令数据集和Baichuan2-13B-Base训练[通用对话模型](https://huggingface.co/ChiyuSONG/data-efficient-training-of-LLMs-v1/tree/main)。
 
 ## Version 1
-这一阶段，我们关注指令微调的过程。[Dynamics of Instruction Tuning](https://arxiv.org/abs/2310.19651)一文揭示了大型语言模型的各种能力在指令微调过程中会受到多种因素的影响，从而产生不同的发展速率。我们利用文中开源的包含了创意写作、代码生成、逻辑推理等十项能力类别的人工清洗指令集，来验证基于百川2底座模型训练后的效果。
+这一阶段，我们关注指令微调的过程。[Dynamics of Instruction Tuning](https://arxiv.org/abs/2310.19651)一文揭示了大型语言模型的各种能力在指令微调过程中会受到多种因素的影响，从而产生不同的发展速率。我们利用文中开源的包含了创意写作、代码生成、逻辑推理等十项能力类别的人工清洗指令集，来验证基于[百川2](https://arxiv.org/abs/2309.10305)底座模型训练后的效果。
 
 ### 总览
 - **基础模型**：[Baichuan2-13B-Base](https://github.com/baichuan-inc/Baichuan2)，由百川智能采用2.6万亿Tokens的高质量语料训练。
