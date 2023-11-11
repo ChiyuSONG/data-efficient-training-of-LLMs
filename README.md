@@ -39,19 +39,26 @@ pip install -r requirements.txt
 #### 1. 基于gradio部署对话系统：
 ```bash
 python chat_gradio.py # 会从hf下载模型
-#or
-python chat_gradio.py --model_name_or_path **已下载的对话模型的本地路径**
+#或者
+python chat_gradio.py --model_name_or_path **已下载的对话模型的本地路径，如"models/data-efficient-training-of-LLMs-v1"**
 ```
 运行后会建立本地URL和临时的公开URL，可根据提示进入URL进行对话。
 
 #### 2.通过代码进行推理：
 ```python
+# 从inference.py中import
 from inference import Assistant
 
-assistant = Assistant("ChiyuSONG/data-efficient-training-of-LLMs-v1") # 会从hf下载，或者换成已下载的对话模型的本地路径
-context = {"messages": [{"role": "user", "content": "生成一段心理咨询师和来访者之间的对话"}]} # 支持多伦对话，可在messages的list中加入更多上文, 上限为2048 tonkens。
-responses, scores = assistant.inference([context]) # 支持批量推理，你可以在list中加入多个context
-print(responses[0]) # 咨询师:你好，我是你的心理咨询师，先我想了解一下你最近的情况怎么样...
+# 加载模型。会从hf下载，可换成已下载的对话模型的本地路径，如"models/data-efficient-training-of-LLMs-v1"
+assistant = Assistant("ChiyuSONG/data-efficient-training-of-LLMs-v1") # 
+
+# 创建对话上文，user的content为问题。
+# 可在messages的list中加入多轮对话历史, 如[{"role": "user", "content": "xxx"},{"role": "assistant", "content": "xxx"},{"role": "user", "content": "xxx"}], 上限为2048 tonkens。
+context = {"messages": [{"role": "user", "content": "生成一段心理咨询师和来访者之间的对话"}]}
+# 推理回复，支持批量推理，你可以在list中加入多个context
+responses, scores = assistant.inference([context])
+# 打印结果，不同context的回复结果存在于list
+print(responses[0]) # "咨询师:你好，我是你的心理咨询师，先我想了解一下你最近的情况怎么样..."
 ```
 
 <br> 
