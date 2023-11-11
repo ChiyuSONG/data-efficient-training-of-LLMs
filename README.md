@@ -50,7 +50,7 @@ python chat_gradio.py --model_name_or_path **已下载的对话模型的本地�
 from inference import Assistant
 
 # 加载模型。会从hf下载，可换成已下载的对话模型的本地路径，如"models/data-efficient-training-of-LLMs-v1"
-assistant = Assistant("ChiyuSONG/data-efficient-training-of-LLMs-v1") # 
+assistant = Assistant("ChiyuSONG/data-efficient-training-of-LLMs-v1")
 
 # 创建对话上文，user的content为问题。
 # 可在messages的list中加入多轮对话历史, 如[{"role": "user", "content": "xxx"},{"role": "assistant", "content": "xxx"},{"role": "user", "content": "xxx"}], 上限为2048 tonkens。
